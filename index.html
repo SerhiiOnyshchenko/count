@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <!-- <div id="clock">
+      <h2>The time is now</h2>
+      <div id="time">
+        <div><span id="hour">00</span><span>Hours</span></div>
+        <div><span id="minutes">00</span><span>Minutes</span></div>
+        <div><span id="seconds">00</span><span>Seconds</span></div>
+      </div>
+    </div> -->
+    <div class="container1">
+      <div class="nav">
+        <span class="one " onclick="changeColor(event)"></span><i class="one"></i>
+        <span class="two" onclick="changeColor(event)"></span><i class="two"></i>
+        <span class="tree" onclick="changeColor(event)"></span><i class="tree"></i>
+        <span class="four" onclick="changeColor(event)"></span><i class="four"></i>
+        <span class="five active" onclick="changeColor(event)"></span><i class="five"></i>
+        <div class="wrapper">
+          <div class="container2">
+            <div class="calculator">
+              <textarea type="text" name='txt' readonly id="result" class="value result" disabled></textarea>
+              <span onclick="cline('')" class="num clear">C</span>
+              <span onclick="back()" class="num clear">&#8592</span>
+              <!-- <span onclick="addValue('(')" class="num">(</span>
+              <span onclick="addValue(')')" class="num">)</span>
+              <span onclick="addValue2('*')" class="num">&times</span>
+              <span onclick="addValue2('/')" class="num">&divide</span> -->
+              <span onclick="addValue(1)" class="num">1</span>
+              <span onclick="addValue(2)" class="num">2</span>
+              <span onclick="addValue(3)" class="num">3</span>
+              <span onclick="addValue2('-')" class="num">-</span>
+              <span onclick="addValue(4)" class="num">4</span>
+              <span onclick="addValue(5)" class="num">5</span>
+              <span onclick="addValue(6)" class="num">6</span>
+              <span onclick="addValue2('+')" class="num ">+</span>
+              <span onclick="addValue(7)" class="num">7</span>
+              <span onclick="addValue(8)" class="num">8</span>
+              <span onclick="addValue(9)" class="num">9</span>
+              <span onclick="total()" class="num plus">=</span>
+              <span id="activ" class="numAct">+</span>
+              <!-- <span onclick="addValue('00')" class="num">00</span>
+              <span onclick="addValue2('.')" class="num">.</span> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <!-- <script type="text/javascript" src="./js/vanilla-tilt.js"></script> -->
+      <!-- <script type="text/javascript">
+        VanillaTilt.init(document.querySelector(".container2"), {
+          max: 15,
+          speed: 400
+        });
+
+      </script> -->
+    <script type="text/javascript" src="./js/app.js"></script>
+  </body>
+</html>
